@@ -99,3 +99,34 @@
 // ql.enqueue(8)
 // ql.dequeue()
 // ql.display()
+
+
+
+
+
+
+
+// //with stack--------------------------------
+// class queue{
+//     constructor(){
+//         this.inStack = [];
+//         this.outStack = [];
+//     }
+
+//     enqueue(x){
+//         this.inStack.push(x);
+//     }
+
+//     dequeue(){
+//         if(this.inStack.length===0 && this.outStack.length===0){
+//             return null;
+//         }
+
+//         if(this.outStack.length===0){
+//             while(this.inStack.length>0){
+//                 this.outStack.push(this.inStack.pop());
+//             }
+//         }
+//         return this.outStack.pop();
+//     }
+// }

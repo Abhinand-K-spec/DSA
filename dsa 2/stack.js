@@ -140,3 +140,53 @@
 
 
 
+//stack using queue----------------------------------
+// class Stack{
+//     constructor(){
+//         this.stack = [];
+//     }
+
+//     push(x){
+//         this.stack.push(x);
+
+//         for(let i=0;i<this.stack.length-1;i++){
+//             this.stack.push(this.stack.shift());
+//         }
+//     }
+
+//     pop(){
+//         if(this.stack.length===0){
+//             return null;
+//         }
+//         return this.stack.shift();
+//     }
+// }
+
+
+
+
+
+
+
+//stack with 2 queue----------------------------
+// class stack{
+//     constructor(){
+//         this.q1 = [];
+//         this.q2 = [];
+
+//     }
+
+//     push(x){
+//         this.q2.push(x);
+
+//         while(this.q1.length>0){
+//             this.q2.push(this.q1.shift());
+//         }
+//         [this.q1,this.q2] = [this.q2,this.q1];
+//     }
+
+//     pop(){
+//         if(this.q1.length===0) return null;
+//         return this.q1.shift();
+//     }
+// }
